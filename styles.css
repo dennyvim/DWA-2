@@ -5,7 +5,7 @@
 }
 body{
     margin: 0;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
@@ -27,6 +27,7 @@ body{
 }
 .header-item:nth-of-type(2){
     display: flex;
+    color: grey;
     justify-content: space-evenly;
     align-items: center;
     font-size: 25px;
@@ -36,9 +37,12 @@ body{
     justify-content: flex-end;
     align-items: center;
     margin-right: 40px;
-    
+}
+.logos{
+    margin: 0px 10px
 }
 .body{
+    padding: 0px 0px 0px 30px;
     background-color: yellow;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,10 +64,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0px 30px;
+}
+.body-item:nth-of-type(1) p{
+text-align: left;
+padding: 0px 70px;
+margin: 0;
+
+}
+.body-item:nth-of-type(1) h2{
+    font-size: 65px;
+    margin: 50px 0px 10px 0px;
+
 }
 .body-item:nth-of-type(2){
     grid-column: 2 / span 2;
-    text-align: center;
+   text-align: end;
+
 }
 .body-item h2{
     font-size: 50px;
@@ -74,17 +91,151 @@ body{
     color: #777777;
 }
 .body-item-child{
+    height: 60px;
+    width: 300px;
     display: flex;
     justify-content: center;
-    border: 1px black solid;
+    border: 2px black solid;
     border-radius: 100px;
-    width: 350px;
     position: relative;
     margin: 0 auto;
     font-size: 30px;
+    align-items: center;
 }
 .body-item-child p{
-    margin: 12px;
     color: black;
+    padding: 30px 50px;
 }
 
+.slides{
+    margin-top: 50px;
+    display: grid;
+    gap: 15px 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 530px 150px 150px ;
+    background-color: yellow;
+    justify-items: center;
+}
+
+.slide-item{
+    background-color: lightblue;
+    border: 1px solid red;
+}
+.slide-item:nth-of-type(1){
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+.slide-item:nth-of-type(2){
+    grid-column: 2 / span 2;
+    justify-self: end;
+    align-self: end;
+}
+.slide-item:nth-of-type(3){
+    grid-column: 4 / span 2;
+}
+.slide-item:nth-of-type(4){
+    grid-column: 6 / span 2;
+    justify-self: start;
+    align-self: end;
+}
+.slide-item:nth-of-type(5){
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+.slide-item:nth-of-type(6){
+    grid-column: 2 / span 2;
+    text-align: center;
+
+}
+.slide-item:nth-of-type(7){
+    grid-column: 4 / span 2;
+    text-align: center;
+
+}
+.slide-item h6{
+    font-size: 40px;
+    margin: 0;
+}
+.slide-item p{
+    margin: 0;
+    padding: 15px 50px;
+    font-size: 20px;
+}
+.slide-item:nth-of-type(8){
+    grid-column: 6 / span 2;
+    text-align: center;
+
+}
+.slide-item:nth-of-type(9){
+    grid-column: 2 / span 2;
+
+}
+.slide-item:nth-of-type(10){
+    grid-column: 4 / span 2;
+
+}
+.slide-item:nth-of-type(11){
+    grid-column: 6 / span 2;
+
+}
+
+.slide-item-child{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 30px;
+    align-items: center;
+}
+.section{
+    height: 900px;
+    margin-top: 30px;
+    background-color: lightblue;
+}
+.footer{
+    padding: 30px;
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+    background-color: yellow;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 900px;
+}
+.footer-item{
+    background-color: lightblue;
+}
+.footer-item:nth-of-type(1){
+    grid-column: 1 / span 1;
+    align-self: center;
+    text-align: center;
+    padding: 120px;
+}
+.footer-item:nth-of-type(1) h3{
+    font-size: 55px;
+}
+.footer-item:nth-of-type(1) p{
+    font-size: 23px;
+    padding: 0px 30px;
+    text-align: start;
+}
+.footer-item:nth-of-type(2){
+    grid-column: 2 / span 2;
+    justify-self: start;
+    align-self: center;
+}
+.footer-item:nth-of-type(3){
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.footer-item:nth-of-type(3) p{
+    letter-spacing: 25px;
+    font-size: 20px;
+    font-weight: 100;
+    color: grey;
+}
